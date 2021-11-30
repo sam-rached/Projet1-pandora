@@ -1,4 +1,0 @@
-( ) an index.html template we can fill
-( ) the map with tags
-( ) carousel
-( ) box infos
