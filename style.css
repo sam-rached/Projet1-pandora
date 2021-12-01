@@ -20,6 +20,7 @@ li{
     text-align: center;
     padding: 10px;
 }
+
 .photos {
     display: flex;
     justify-content: center;
@@ -31,27 +32,24 @@ li{
     margin-top: 0px;
     margin-bottom: 30px;;
     background-color: darkslategrey;
-    
 }
 .area {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;  
-    
 }
 .square {
     display: inline-block;
     text-align: center;
     background-color: darkslategrey;
     margin: 40px;
-    width: 500px;
-    height: 350px;
+    width: 450px;
+    height: 300px;
 }
-
 footer {
     height: 100px;
     width: auto;
     background-color: darkslategrey;
     text-align: center;
 }
+
+
