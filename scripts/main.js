@@ -6,11 +6,11 @@ const habitants = {
 }
 
 const food = {
-    zone4: `Choux, navets, betteraves... Que des légumes tristes, car rien d'autre ne pousse dans leur région. Leur pain est très mauvais, évitez le. Il est fortement conseillé d'apporter sa propre nourriture. Et sa propre boisson, car il est déjà arrivé qu'ils empoisonnent l'eau pour une querelle de voisinage...`,
+    zone4: `Choux, navets, betteraves... Que des légumes tristes, car rien d'autre ne pousse dans leur région. Leur pain est très mauvais, évitez le. Il est fortement conseillé d'apporter sa propre nourriture. Et sa propre boisson, car il est déjà arrivé qu'ils empoisonnent l'eau pour une querelle de voisinage... Photo de testicules de poulets, met très prisé par les locaux.`,
 }
 
 const nature = {
-    zone4: `Des forêts, des plaines et de la boue, beaucoup de boue. Ce qui explique surement leur surnom de "bouseux". Pour la faune, vous pourrez peut-être apercevoir quelques animaux sauvages comme les perdrix, les faisans, les cerfs et beaucoup plus rare les <a href="https://fr.wikipedia.org/wiki/Jackalope">Jackalope</a>.`,
+    zone4: `Des forêts, des plaines et de la boue, beaucoup de boue. Ce qui explique surement leur surnom de "bouseux". Pour la faune, vous pourrez peut-être apercevoir quelques animaux sauvages comme les perdrix, les faisans, les cerfs et beaucoup plus rare les <a href="https://fr.wikipedia.org/wiki/Jackalope" target="_blank">Jackalope</a>.`,
 }
 
 const customs = {
@@ -21,7 +21,37 @@ const images = {
     zone4: {
         habitants: 'img/zone4-habitants.jpg',
         food: 'img/zone4-food.jpg',
-        nature: 'img/zone4-nature.jpg',
-        customs: 'img/zone4-customs.jpg',
+        //nature: 'img/zone4-nature.jpg',
+        //customs: 'img/zone4-customs.jpg',
     },
+}
+
+function clickOnZone(){
+    let article = document.querySelector('article#habitants');
+    if (habitants[this.id])
+        article.getElementsByTagName('p')[0].innerHTML = habitants[this.id];
+    if (images[this.id] && images[this.id]['habitants'])
+        article.getElementsByTagName('img')[0].src = images[this.id]['habitants'];
+
+    article = document.querySelector('article#food');
+    if (food[this.id])
+        article.getElementsByTagName('p')[0].innerHTML = food[this.id];
+    if (images[this.id] && images[this.id]['food'])
+        article.getElementsByTagName('img')[0].src = images[this.id]['food'];
+
+    article = document.querySelector('article#nature');
+    if (nature[this.id])
+        article.getElementsByTagName('p')[0].innerHTML = nature[this.id];
+    if (images[this.id] && images[this.id]['nature'])
+        article.getElementsByTagName('img')[0].src = images[this.id]['nature'];
+    
+    article = document.querySelector('article#customs');
+    if (customs[this.id])
+        article.getElementsByTagName('p')[0].innerHTML = customs[this.id];
+    if (images[this.id] && images[this.id]['customs'])
+        article.getElementsByTagName('img')[0].src = images[this.id]['customs'];
+}
+
+for (const li of document.querySelectorAll('nav li')){
+    li.onclick = clickOnZone;
 }
