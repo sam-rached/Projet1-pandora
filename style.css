@@ -1,6 +1,5 @@
-
 :root {
-  --main-color: #046DCC;
+  --main-color: #046dcc;
   --second-color: #046dcc;
 }
 
@@ -15,10 +14,10 @@ header {
   height: 400px;
   width: auto;
   background-color: var(--main-color);
-  background-image: url('img/map.png');
+  background-image: url("img/map.png");
   background-size: cover;
   overflow: hidden; /* pour que la carte ne dépasse pas du header */
- }
+}
 
 ul {
   padding: 10px;
@@ -32,7 +31,8 @@ li {
   padding: 10px;
 }
 li:hover {
-   background-color: var(--second-color);
+  background-color: var(--second-color);
+  cursor: pointer;
 }
 
 /**************************************************************************
@@ -41,7 +41,6 @@ li:hover {
 /*.map {
   position: relative;
   width: 100%;
-  z-index: 0;
 }
  */
 img.marker {
@@ -92,7 +91,6 @@ img#zone4-map {
 }
 .carousel-container-img {
   width: 100%;
-  /* height: auto; */
 }
 
 @keyframes carousel {
@@ -119,46 +117,45 @@ img#zone4-map {
 }
 
 #name-area {
-    font-size: 30px;
-    color: darkslategrey;
-    text-align: center;
+  font-size: 30px;
+  color: darkslategrey;
+  text-align: center;
 }
 .area {
-    display: flex;
-    justify-content: center;
-    align-items:center ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .square {
-    display: inline-block;
-    text-align: center;
-    background-color: darkslategrey;
-    margin: 30px;
-    width: 400px;
-    height: 500px;
+  display: inline-block;
+  text-align: center;
+  background-color: darkslategrey;
+  margin: 30px;
+  width: 400px;
+  height: 500px;
 }
 .category-square {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .category-title {
-    text-align: center;
+  text-align: center;
 }
 .category-img {
-    width: 80%;
-    height: 40%;
-    margin: 10px;
+  width: 80%;
+  height: 40%;
+  margin: 10px;
 }
 .category-description {
-    width: 80%;
-    height: 40%;
-    margin: 10px;
-    padding: 5px;
-    background-color: gainsboro;
-    color: darkslategrey;
-    text-align: justify;
-
+  width: 80%;
+  height: 40%;
+  margin: 10px;
+  padding: 5px;
+  background-color: gainsboro;
+  color: darkslategrey;
+  text-align: justify;
 }
 footer {
   height: 100px;
