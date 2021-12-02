@@ -14,7 +14,11 @@ header {
   height: 400px;
   width: auto;
   background-color: darkslategrey;
-}
+  background-image: url('img/map.png');
+  background-size: cover;
+  overflow: hidden; /* pour que la carte ne dépasse pas du header */
+ }
+
 ul {
   padding: 10px;
   margin-bottom: 30px;
@@ -30,7 +34,42 @@ li:hover {
    background-color: var(--second-color);
 }
 
-/* SECTION CAROUSEL*/
+/**************************************************************************
+** MAP
+**************************************************************************/
+/*.map {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+ */
+img.marker {
+  height: 20px;
+}
+img#zone1-map {
+  position: relative;
+  left: 200px;
+  top: 100px;
+}
+img#zone2-map {
+  position: relative;
+  left: 300px;
+  top: 100px;
+}
+img#zone3-map {
+  position: relative;
+  left: 200px;
+  top: 200px;
+}
+img#zone4-map {
+  position: relative;
+  left: 400px;
+  top: 250px;
+}
+
+/**************************************************************************
+** SECTION CAROUSEL
+**************************************************************************/
 .photos {
   display: flex;
   width: 100%;
@@ -78,7 +117,7 @@ li:hover {
   }
 }
 
-.name-area {
+#name-area {
     font-size: 30px;
     color: darkslategrey;
     text-align: center;
