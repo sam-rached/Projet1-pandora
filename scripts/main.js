@@ -27,25 +27,25 @@ const images = {
 }
 
 function clickOnZone(){
-    let article = document.querySelector('article#habitants');
+    let article = document.getElementById('habitants');
     if (habitants[this.id])
         article.getElementsByTagName('p')[0].innerHTML = habitants[this.id];
     if (images[this.id] && images[this.id]['habitants'])
         article.getElementsByTagName('img')[0].src = images[this.id]['habitants'];
 
-    article = document.querySelector('article#food');
+    article = document.getElementById('food');
     if (food[this.id])
         article.getElementsByTagName('p')[0].innerHTML = food[this.id];
     if (images[this.id] && images[this.id]['food'])
         article.getElementsByTagName('img')[0].src = images[this.id]['food'];
 
-    article = document.querySelector('article#nature');
+    article = document.getElementById('nature');
     if (nature[this.id])
         article.getElementsByTagName('p')[0].innerHTML = nature[this.id];
     if (images[this.id] && images[this.id]['nature'])
         article.getElementsByTagName('img')[0].src = images[this.id]['nature'];
     
-    article = document.querySelector('article#customs');
+    article = document.getElementById('customs');
     if (customs[this.id])
         article.getElementsByTagName('p')[0].innerHTML = customs[this.id];
     if (images[this.id] && images[this.id]['customs'])

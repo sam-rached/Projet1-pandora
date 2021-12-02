@@ -13,7 +13,11 @@ header {
   height: 400px;
   width: auto;
   background-color: darkslategrey;
+  background-image: url("img/map.png");
+  background-size: cover;
+  overflow: hidden; /* pour que la carte ne dépasse pas du header */
 }
+
 ul {
   padding: 10px;
   margin-bottom: 30px;
@@ -28,7 +32,27 @@ li {
 li:hover {
   background-color: var(--second-color);
 }
-/* SECTION CAROUSEL*/
+
+/**************************************************************************
+** MAP
+**************************************************************************/
+/*.map {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+ */
+img#zone4 {
+  position: relative;
+  left: 200px;
+  top: 100px;
+  height: 20px;
+}
+
+/**************************************************************************
+** SECTION CAROUSEL
+**************************************************************************/
+
 .photos {
   display: flex;
   width: 100%;
