@@ -99,6 +99,7 @@ function clickOnZone(event){
     const title = document.getElementById('name-area');
     title.innerHTML = titles[zone];
     title.scrollIntoView();
+    launchAnimation();
 }
 
 // On assigne les callback quand on clique sur la barre nav
@@ -109,4 +110,32 @@ for (const li of document.querySelectorAll('nav li')){
 // On assigne les callback quand on clique sur les marqueurs de la carte
 for (const a of document.querySelectorAll('header a')){
     a.onclick = clickOnZone;
+}
+
+/* WoodSprite animation */
+let idAnimation = null;
+function launchAnimation() {
+    function getRandomIntInclusive(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min +1)) + min;
+    }
+    const img = document.getElementById('woodSprite');
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+
+    let posX = 0, posY = vw/2;
+    clearInterval(idAnimation);
+    idAnimation = setInterval(frame, 10);
+    function frame() {
+        if (posY > vh+img.height+50) {
+            clearInterval(idAnimation);
+        } else {
+            posX++;
+            posY += getRandomIntInclusive(-1,1);
+
+            img.style.top = posX + 'px';
+            img.style.left = posY + 'px';
+        }
+    }
 }
