@@ -7,12 +7,12 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
   font-style: oblique;
-  margin: 50px;
+  margin: 0px;
 }
 header {
   height: 400px;
   width: auto;
-  background-color: darkslategrey;
+  background-color: var(--main-color);
   background-image: url('img/map.png');
   background-size: cover;
   overflow: hidden; /* pour que la carte ne dépasse pas du header */
@@ -147,3 +147,4 @@ footer {
   background-color: darkslategrey;
   text-align: center;
 }
+
