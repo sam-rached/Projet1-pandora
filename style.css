@@ -7,14 +7,14 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
   font-style: oblique;
-  margin: 50px;
+  margin: 0px;
+  text-align: justify;
 }
 header {
   height: 400px;
   width: auto;
-  background-color: darkslategrey;
-  /* background-image: url("img/map.png"); */
-  background-position: center;
+  background-color: var(--main-color);
+  background-image: url("img/map.png");
   background-size: cover;
   overflow: hidden; /* pour que la carte ne dépasse pas du header */
 }
@@ -42,12 +42,28 @@ li:hover {
   position: relative;
   width: 100%;
 }
-
-img#zone4 {
-  position: absolute;
-  left: 30px;
-  top: 10px;
+*/ img.marker {
   height: 20px;
+}
+img#zone1-map {
+  position: relative;
+  left: 200px;
+  top: 100px;
+}
+img#zone2-map {
+  position: relative;
+  left: 300px;
+  top: 100px;
+}
+img#zone3-map {
+  position: relative;
+  left: 200px;
+  top: 200px;
+}
+img#zone4-map {
+  position: relative;
+  left: 400px;
+  top: 250px;
 }
 
 /**************************************************************************
@@ -101,7 +117,7 @@ img#zone4 {
   }
 }
 
-.name-area {
+#name-area {
   font-size: 30px;
   color: darkslategrey;
   text-align: center;
@@ -129,22 +145,29 @@ img#zone4 {
   text-align: center;
 }
 .category-img {
-  background-image: url("img/avatar-img9.png");
   width: 80%;
-  height: auto;
+  height: 40%;
   margin: 10px;
 }
 .category-description {
   width: 80%;
-  height: auto;
+  height: 40%;
   margin: 10px;
   padding: 5px;
   background-color: gainsboro;
   color: darkslategrey;
+  text-align: justify;
 }
 footer {
   height: 100px;
   width: auto;
   background-color: darkslategrey;
   text-align: center;
+}
+
+/* Woodsprite */
+#woodSprite {
+  position: relative;
+  left: -500px;
+  height: 60px;
 }
