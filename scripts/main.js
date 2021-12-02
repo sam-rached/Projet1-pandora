@@ -26,7 +26,12 @@ const images = {
     },
 }
 
+const titles = {
+    zone4: 'La vallée des Paiquores',
+}
+
 function clickOnZone(){
+    // this.id contient l'id de l'élément li, zone1 par exemple
     let article = document.getElementById('habitants');
     if (habitants[this.id])
         article.getElementsByTagName('p')[0].innerHTML = habitants[this.id];
@@ -50,6 +55,10 @@ function clickOnZone(){
         article.getElementsByTagName('p')[0].innerHTML = customs[this.id];
     if (images[this.id] && images[this.id]['customs'])
         article.getElementsByTagName('img')[0].src = images[this.id]['customs'];
+
+    const title = document.getElementById('name-area');
+    title.innerHTML = titles[this.id];
+    title.scrollIntoView();
 }
 
 for (const li of document.querySelectorAll('nav li')){
