@@ -1,3 +1,8 @@
+:root {
+  --main-color: #046dcc;
+  --second-color: #046dcc;
+}
+
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
@@ -20,6 +25,9 @@ li {
   text-align: center;
   padding: 10px;
 }
+li:hover {
+  background-color: var(--second-color);
+}
 /* SECTION CAROUSEL*/
 .photos {
   display: flex;
@@ -28,7 +36,7 @@ li {
 }
 .carousel {
   position: relative;
-  width: 55%;
+  width: 55vw;
   border-radius: 10px;
   margin: 20px auto;
   overflow: hidden;
@@ -114,8 +122,4 @@ footer {
   width: auto;
   background-color: darkslategrey;
   text-align: center;
-}
-
-:root {
-  --main-color: #046dcc;
 }
