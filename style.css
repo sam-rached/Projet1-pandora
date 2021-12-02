@@ -145,9 +145,8 @@ img#zone4-map {
     text-align: center;
 }
 .category-img {
-    background-image: url("img/avatar-img9.png");
     width: 80%;
-    height: auto;
+    height: 30%;
     margin: 10px;
 }
 .category-description {
