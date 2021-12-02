@@ -28,7 +28,7 @@ li {
 }
 .carousel {
   position: relative;
-  width: 55vw;
+  width: 55%;
   border-radius: 10px;
   margin: 20px auto;
   overflow: hidden;
@@ -42,7 +42,7 @@ li {
 }
 .carousel-container-img {
   width: 100%;
-  /* height: auto; */
+  /* height: auto*/
 }
 
 @keyframes carousel {
@@ -69,46 +69,45 @@ li {
 }
 
 .name-area {
-    font-size: 30px;
-    color: darkslategrey;
-    text-align: center;
+  font-size: 30px;
+  color: darkslategrey;
+  text-align: center;
 }
 .area {
-    display: flex;
-    justify-content: center;
-    align-items:center ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .square {
-    display: inline-block;
-    text-align: center;
-    background-color: darkslategrey;
-    margin: 30px;
-    width: 400px;
-    height: 500px;
+  display: inline-block;
+  text-align: center;
+  background-color: darkslategrey;
+  margin: 30px;
+  width: 400px;
+  height: 500px;
 }
 .category-square {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .category-title {
-    text-align: center;
+  text-align: center;
 }
 .category-img {
-    background-image: url("img/avatar-img9.png");
-    width: 80%;
-    height: auto;
-    margin: 10px;
+  background-image: url("img/avatar-img9.png");
+  width: 80%;
+  height: auto;
+  margin: 10px;
 }
 .category-description {
-    width: 80%;
-    height: auto;
-    margin: 10px;
-    padding: 5px;
-    background-color: gainsboro;
-    color: darkslategrey;
-
+  width: 80%;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  background-color: gainsboro;
+  color: darkslategrey;
 }
 footer {
   height: 100px;
@@ -118,5 +117,5 @@ footer {
 }
 
 :root {
-    --main-color: #046DCC;
+  --main-color: #046dcc;
 }
