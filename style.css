@@ -1,4 +1,134 @@
+<<<<<<< HEAD
 .map {
     cursor: pointer;
     
 }
+=======
+:root {
+  --main-color: #046DCC;
+  --second-color: #046dcc;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  font-style: oblique;
+  margin: 50px;
+}
+header {
+  height: 400px;
+  width: auto;
+  background-color: darkslategrey;
+}
+ul {
+  padding: 10px;
+  margin-bottom: 30px;
+  list-style-type: none;
+  background-color: darkslategrey;
+}
+li {
+  display: inline;
+  text-align: center;
+  padding: 10px;
+}
+li:hover {
+   background-color: var(--second-color);
+}
+
+/* SECTION CAROUSEL*/
+.photos {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.carousel {
+  position: relative;
+  width: 55vw;
+  border-radius: 10px;
+  margin: 20px auto;
+  overflow: hidden;
+  box-shadow: 8px 8px 4px -3px rgba(0, 0, 0, 0.7);
+}
+.carousel-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  animation: carousel 10s ease-in-out infinite;
+}
+.carousel-container-img {
+  width: 100%;
+  /* height: auto; */
+}
+
+@keyframes carousel {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  25%,
+  45% {
+    transform: translateX(-55vw);
+  }
+  50%,
+  70% {
+    transform: translateX(-110vw);
+  }
+  75%,
+  95% {
+    transform: translateX(-165vw);
+  }
+
+  100% {
+    transform: translateX(-220vw);
+  }
+}
+
+.name-area {
+    font-size: 30px;
+    color: darkslategrey;
+    text-align: center;
+}
+.area {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.square {
+    display: inline-block;
+    text-align: center;
+    background-color: darkslategrey;
+    margin: 30px;
+    width: 400px;
+    height: 500px;
+}
+.category-square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.category-title {
+    text-align: center;
+}
+.category-img {
+    background-image: url("img/avatar-img9.png");
+    width: 80%;
+    height: auto;
+    margin: 10px;
+}
+.category-description {
+    width: 80%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    background-color: gainsboro;
+    color: darkslategrey;
+
+}
+footer {
+  height: 100px;
+  width: auto;
+  background-color: darkslategrey;
+  text-align: center;
+}
+>>>>>>> 69ddef4c2f158fd2979e130d9cfa99c09586a36a
