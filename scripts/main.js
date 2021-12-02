@@ -27,10 +27,10 @@ const customs = {
 
 const images = {
   zone3: {
-    habitants: "",
-    food: "",
-    nature: "",
-    customs: "",
+    habitants: "img/zone3-habitants",
+    food: "img/zone3-food",
+    nature: "img/zone3-lieu",
+    customs: "img/zone3-coutume",
   },
   zone4: {
     habitants: "img/zone4-habitants.jpg",
