@@ -8,6 +8,7 @@ body {
   color: white;
   font-style: oblique;
   margin: 0px;
+  text-align: justify;
 }
 header {
   height: 400px;
