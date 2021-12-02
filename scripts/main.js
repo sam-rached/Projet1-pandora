@@ -39,7 +39,6 @@ const images = {
     nature: "img/avatar-img5.webp",
     customs: "img/flying-on-banshees.jpg",
   },
-
   zone2: {
     habitants: "img/avatar-img8-cropped.jpg",
     food: "img/avatar-img2.png",
@@ -52,12 +51,11 @@ const images = {
     nature: "img/zone3-lieu.jpg",
     customs: "img/zone3-coutume.jpg",
   },
-
   zone4: {
     habitants: "img/zone4-habitants.jpg",
     food: "img/zone4-food.jpg",
-    //nature: 'img/zone4-nature.jpg',
-    //customs: 'img/zone4-customs.jpg',
+    nature: 'img/zone4-nature.jpg',
+    customs: 'img/zone4-coutumes.jpg',
   },
 };
 
