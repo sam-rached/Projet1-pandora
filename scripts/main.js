@@ -24,7 +24,12 @@ const customs = {
 
 const images = {
     zone1: {
-        
+        habitants: 'img/Navi.jpeg',
+        food: 'img/scary-plants.jpeg',
+        nature: 'img/avatar-2-artwork.jpeg',
+        customs: ''
+
+
     }
     zone4: {
         habitants: 'img/zone4-habitants.jpg',

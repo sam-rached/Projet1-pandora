@@ -166,3 +166,12 @@ footer {
   text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+/* Woodsprite */
+#woodSprite {
+  position: relative;
+  left: -500px;
+  height: 60px;
+}
+>>>>>>> 046f58a29a16cf02af74e2873af81293f6414f1c
