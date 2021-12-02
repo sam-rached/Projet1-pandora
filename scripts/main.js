@@ -27,7 +27,7 @@ const images = {
         habitants: 'img/Navi.jpeg',
         food: 'img/scary-plants.jpeg',
         nature: 'img/avatar-2-artwork.jpeg',
-        customs: ''
+        customs: 'img/connecting.jpeg'
 
 
     }
