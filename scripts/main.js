@@ -9,7 +9,7 @@ const habitants = {
 
 const food = {
   zone3:
-    "Leur plat local est le Couscous royal au manioc et pattes de tarantule grillées, un délice divin.Sinon la chasse et la cueillette occupent la majeur partie de leur temps (manioc, acai,banane)",
+    "Leur plat local est le Couscous royal au manioc et pattes de tarantule grillées, un délice divin.Sinon la chasse et la cueillette occupent la majeur partie de leur temps (manioc, banane, serpent)",
   zone4: `Choux, navets, betteraves... Que des légumes tristes, car rien d'autre ne pousse dans leur région. Leur pain est très mauvais, évitez le. Il est fortement conseillé d'apporter sa propre nourriture. Et sa propre boisson, car il est déjà arrivé qu'ils empoisonnent l'eau pour une querelle de voisinage... Photo de testicules de poulets, met très prisé par les locaux.`,
 };
 
@@ -27,10 +27,10 @@ const customs = {
 
 const images = {
   zone3: {
-    habitants: "img/zone3-habitants",
-    food: "img/zone3-food",
-    nature: "img/zone3-lieu",
-    customs: "img/zone3-coutume",
+    habitants: "img/zone3-habitant.jpg",
+    food: "img/zone3-food.jpg",
+    nature: "img/zone3-lieu.jpg",
+    customs: "img/zone3-coutume.jpg",
   },
   zone4: {
     habitants: "img/zone4-habitants.jpg",
