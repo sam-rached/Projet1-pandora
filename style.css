@@ -43,11 +43,28 @@ li:hover {
   z-index: 0;
 }
  */
-img#zone4 {
+img.marker {
+  height: 20px;
+}
+img#zone1-map {
   position: relative;
   left: 200px;
   top: 100px;
-  height: 20px;
+}
+img#zone2-map {
+  position: relative;
+  left: 300px;
+  top: 100px;
+}
+img#zone3-map {
+  position: relative;
+  left: 200px;
+  top: 200px;
+}
+img#zone4-map {
+  position: relative;
+  left: 400px;
+  top: 250px;
 }
 
 /**************************************************************************
