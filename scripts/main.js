@@ -3,7 +3,7 @@
  */
 const habitants = {
 
-    zone1:`The island of Pandora is home to the Warrios of Na'vi. Blue and mystical in appearance these Warrios have been trained by the elements to become the deadliest beings in the universe. That being said they have adapted to humain contact giving humains the possibility to get to know them a bit better and gradually become friends. The Na'vi Warriors are one with nature and the enviroment they live in, making them remarkable marksman, hunters, doctors, cooks... in other words there is not alot of things they can not do, making them the next rulers of the universe and great people do be around at a party.`,
+    zone1:` Les Floating Islands sont principalement peuplées de dragons qui y vivent depuis toujours, cependant vous pouvez trouver des populations Na'vi qui préfèrent le calme et l'isolement de ces Floating Islands par rapport à la vie en contrebas..`,
     zone2: `La fête est un pilier de la vie quotidienne des Na'vi, leur permettant de relâcher la pression mais aussi de rencontrer les autres membres de la tribu. Activité interdite aux Paiquores (on ne mélange pas les torchons et les serviettes) mais les humains en goguette sauront se faire accepter le temps d'une soirée grâce à leur petite taille hautement exotique. `,
     zone3: ``,
 
@@ -12,7 +12,7 @@ const habitants = {
 
 const food = {
 
-    zone1: `Pretty much anything that grows on the island. A variety of weird and wonderful fruit and vedge know to the Na'vi Warriors as "boomchacalaka",Boomchacalaka is a term used to say that everything is edible the key is how it is cooked. Sadly that type of inforrmation is top secret, only true Na'vi can cook up a feast for the visitors (wouldn't want to kill anyone during their visit).`,
+    zone1: `Tout ce qui vole... Vous ne pouvez pas vraiment manger une vache là-haut, n'est-ce pas! Si vous avez de la chance, un dragon peut jeter le reste de sa carcasse si cela arrive COUREZ pour ramasser la chair en décomposition restante ! délicieux.`,
     zone2: `Imergez-vous dans la fête façon Na'vi grâce aux cocktails de champignons hallucinogènes proposés sur le site: leurs couleurs éclatantes sont un avant-goût du voyage qui vous attend.`,
     zone3: ``,
 
@@ -21,7 +21,7 @@ const food = {
 
 const nature = {
 
-    zone1: `Forest, beaches, floating islands, mountains, clifts, caves, swamps... the Island of Pandora is 3 different ecosystem on one island, the beauty of this island is breathtaking, looking like earth but also extraterrestrial with their vibrant colors and stellar shapes.`,
+    zone1: `Vue d'en haut, rien de mieux. Il y a encore beaucoup de végétation sur les Islands comme : arbres, herbe, fleurs. Faites attention à ne pas tomber, rien ne dit mieux Floating Island qu'un énorme flanc de falaise et tombez a ca mort(avec vue et vole surprenante).`,
     zone2: `L'Arbre des âmes est aussi un haut lieux de la vie nocturne sur Pandora où on se retrouve entre membres de la tribu afin de pratiquer des danses rituelles jusqu'au petit jour. Les plantes fluorescentes qui se trouvent autour permettent un éclairage psychédélique idéal pour vos soirées les plus folles et mémorables.`,
     zone3: ``,
 
@@ -30,7 +30,7 @@ const nature = {
 
 const customs = {
 
-    zone1: `Being a small island consisting of multiple cultures and ethnicities, Pandora has many traditions and customs that even some Na'vi don’t understand, depending on which part of the Island they’re from but the main custom is to always connect with one another. They also agrea on transportation, the only way to get around the island is by dragon or rhino beasts all depending on your needs (flying around is a big thing here). The Na'vi are Kind beings but will not accept any disrespect towards their elders or their royal family. They are one with nature, what comes from the land goes back to the land. no littering aloud.`,
+    zone1: `Voler sur le dos d'un dragon est l'une des principales coutumes des Floating Islands, c'est comme monter à cheval à 10000 mètres du sol a 300 km h avec un risque élevé d'avoir des insectes dans les yeux et potentiellement mourir, mais à part ça tout comme monter a cheval. La seule façon de volé sur un dragon est de se connecter avec un dragon. Good luck with that.`,
     zone2: `Veillez à vous habiller à la mode Na'vi pour sortir: pagne, colliers de perles et plumes de Nadrak (le paon local) de rigueur, les chaussures à semelles anti-dérapantes étant un must pour éviter toute chute malencontreuse sur le dance-floor.`,
     zone3: ``,
 
@@ -70,7 +70,7 @@ const images = {
 }
 
 const titles = {
-    zone1: "La zone d'Iysha",
+    zone1: 'Floating Islands',
     zone2: 'Pandora by night',
     zone3: 'La zone de Samir',
     zone4: 'La vallée des Paiquores',
