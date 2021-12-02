@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-.map {
-    cursor: pointer;
-    
-}
-=======
+
 :root {
   --main-color: #046DCC;
   --second-color: #046dcc;
@@ -131,4 +126,4 @@ footer {
   background-color: darkslategrey;
   text-align: center;
 }
->>>>>>> 69ddef4c2f158fd2979e130d9cfa99c09586a36a
+
