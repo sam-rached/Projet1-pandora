@@ -27,40 +27,56 @@ const images = {
 }
 
 const titles = {
+    zone1: "La zone d'Iysha",
+    zone2: 'La zone de Juliette',
+    zone3: 'La zone de Samir',
     zone4: 'La vallée des Paiquores',
 }
 
-function clickOnZone(){
+function clickOnZone(event){
+    event.preventDefault();
+    
     // this.id contient l'id de l'élément li, zone1 par exemple
+    // dans les éléments <li> on récupère un id comme zone1
+    // dans les éléments <a> on récupère un id comme zone1-map
+    // donc on fait un split et on prend la première partie (toujours zone1)
+    let zone = event.target.id.split('-')[0];
+
     let article = document.getElementById('habitants');
-    if (habitants[this.id])
-        article.getElementsByTagName('p')[0].innerHTML = habitants[this.id];
-    if (images[this.id] && images[this.id]['habitants'])
-        article.getElementsByTagName('img')[0].src = images[this.id]['habitants'];
+    if (habitants[zone])
+        article.getElementsByTagName('p')[0].innerHTML = habitants[zone];
+    if (images[zone] && images[zone]['habitants'])
+        article.getElementsByTagName('img')[0].src = images[zone]['habitants'];
 
     article = document.getElementById('food');
-    if (food[this.id])
-        article.getElementsByTagName('p')[0].innerHTML = food[this.id];
-    if (images[this.id] && images[this.id]['food'])
-        article.getElementsByTagName('img')[0].src = images[this.id]['food'];
+    if (food[zone])
+        article.getElementsByTagName('p')[0].innerHTML = food[zone];
+    if (images[zone] && images[zone]['food'])
+        article.getElementsByTagName('img')[0].src = images[zone]['food'];
 
     article = document.getElementById('nature');
-    if (nature[this.id])
-        article.getElementsByTagName('p')[0].innerHTML = nature[this.id];
-    if (images[this.id] && images[this.id]['nature'])
-        article.getElementsByTagName('img')[0].src = images[this.id]['nature'];
+    if (nature[zone])
+        article.getElementsByTagName('p')[0].innerHTML = nature[zone];
+    if (images[zone] && images[zone]['nature'])
+        article.getElementsByTagName('img')[0].src = images[zone]['nature'];
     
     article = document.getElementById('customs');
-    if (customs[this.id])
-        article.getElementsByTagName('p')[0].innerHTML = customs[this.id];
-    if (images[this.id] && images[this.id]['customs'])
-        article.getElementsByTagName('img')[0].src = images[this.id]['customs'];
+    if (customs[zone])
+        article.getElementsByTagName('p')[0].innerHTML = customs[zone];
+    if (images[zone] && images[zone]['customs'])
+        article.getElementsByTagName('img')[0].src = images[zone]['customs'];
 
     const title = document.getElementById('name-area');
-    title.innerHTML = titles[this.id];
+    title.innerHTML = titles[zone];
     title.scrollIntoView();
 }
 
+// On assigne les callback quand on clique sur la barre nav
 for (const li of document.querySelectorAll('nav li')){
     li.onclick = clickOnZone;
+}
+
+// On assigne les callback quand on clique sur les marqueurs de la carte
+for (const a of document.querySelectorAll('header a')){
+    a.onclick = clickOnZone;
 }
