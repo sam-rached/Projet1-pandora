@@ -13,6 +13,11 @@ header {
   height: 400px;
   width: auto;
   background-color: darkslategrey;
+  overflow: hidden; /* pour que la carte ne dépasse pas du header */
+ }
+.map {
+  width: 100%;
+  /*height: auto;*/
 }
 ul {
   padding: 10px;
