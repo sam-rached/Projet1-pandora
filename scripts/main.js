@@ -27,7 +27,7 @@ const images = {
 }
 
 function clickOnZone(){
-    let article = document.querySelector('article#habitants');
+    let article = document.getElementById('habitants');
     if (habitants[this.id])
         article.getElementsByTagName('p')[0].innerHTML = habitants[this.id];
     if (images[this.id] && images[this.id]['habitants'])
