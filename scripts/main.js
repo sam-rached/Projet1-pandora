@@ -35,7 +35,7 @@ const images = {
     habitants: "img/avatar-img11.png",
     food: "img/carcass.jpeg",
     nature: "img/avatar-img5.webp",
-    customs: "img/flying-on-banshees.jpg",
+    customs: "img/flying-on-banshees-cropped.jpg",
   },
   zone2: {
     habitants: "img/avatar-img8-cropped.jpg",
