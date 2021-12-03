@@ -1,6 +1,9 @@
 :root {
   --main-color: #046dcc;
   --second-color: #046dcc;
+  --bright-color: #6E4AAD;
+  --darker-color: #2F4858;
+  --lighter-color: white;
 }
 
 body {
@@ -9,7 +12,9 @@ body {
   font-style: oblique;
   margin: 0px;
   text-align: justify;
+  background-image: linear-gradient(to right top, #2b14c6, #293cd3, #3458dc, #4871e2, #6089e6, #5a9cef, #5daef4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
+
 header {
   height: 400px;
   width: auto;
@@ -19,19 +24,32 @@ header {
   overflow: hidden; /* pour que la carte ne dépasse pas du header */
 }
 
-ul {
-  padding: 10px;
-  margin-bottom: 30px;
-  list-style-type: none;
-  background-color: darkslategrey;
+.mainTitle {
+  padding: 20px;
+  font-size: 40px;
+  color: var(--lighter-color);
 }
+
+ul {
+  padding: 0px;
+  margin-bottom: 30px;
+  border: 0px;
+  list-style-type: none;
+  background-color: var(--lighter-color);
+  color: var(--main-color);
+  display: flex;
+  justify-content: space-evenly;
+}
+
 li {
   display: inline;
   text-align: center;
   padding: 10px;
 }
+
 li:hover {
   background-color: var(--second-color);
+  color: var(--lighter-color);
   cursor: pointer;
 }
 
@@ -46,21 +64,25 @@ li:hover {
 img.marker {
   height: 20px;
 }
+
 img#zone1-map {
   position: relative;
   left: 200px;
   top: 100px;
 }
+
 img#zone2-map {
   position: relative;
   left: 300px;
   top: 100px;
 }
+
 img#zone3-map {
   position: relative;
   left: 200px;
   top: 200px;
 }
+
 img#zone4-map {
   position: relative;
   left: 400px;
@@ -75,6 +97,7 @@ img#zone4-map {
   width: 100%;
   justify-content: center;
 }
+
 .carousel {
   position: relative;
   width: 55vw;
@@ -83,12 +106,14 @@ img#zone4-map {
   overflow: hidden;
   box-shadow: 8px 8px 4px -3px rgba(0, 0, 0, 0.7);
 }
+
 .carousel-container {
   display: flex;
   position: relative;
   width: 100%;
   animation: carousel 10s ease-in-out infinite;
 }
+
 .carousel-container-img {
   width: 100%;
 }
@@ -118,49 +143,60 @@ img#zone4-map {
 
 #name-area {
   font-size: 30px;
-  color: darkslategrey;
+  color: var(--bright-color);
   text-align: center;
 }
+
 .area {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .square {
   display: inline-block;
   text-align: center;
-  background-color: darkslategrey;
+  background-color: var(--lighter-color);
   margin: 30px;
   width: 400px;
   height: 500px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 4px -3px rgba(0, 0, 0, 0.7);
 }
+
 .category-square {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .category-title {
   text-align: center;
+  color: var(--darker-color);
 }
+
 .category-img {
   width: 80%;
   height: 40%;
   margin: 10px;
 }
+
 .category-description {
-  width: 80%;
+  width: 90%;
   height: 40%;
   margin: 10px;
   padding: 5px;
-  background-color: gainsboro;
-  color: darkslategrey;
+  background-color: var(--lighter-color);
+  color: var(--darker-color);
   text-align: justify;
+  text-overflow: ellipsis;
 }
+
 footer {
   height: 100px;
   width: auto;
-  background-color: darkslategrey;
+  background-color: var(--second-color);
   text-align: center;
 }
 

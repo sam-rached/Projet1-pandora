@@ -41,7 +41,7 @@ const images = {
     habitants: "img/avatar-img8-cropped.jpg",
     food: "img/avatar-img2.png",
     nature: "img/avatar-img10.jpg",
-    customs: "img/bynight1.jpg",
+    customs: "img/party.jpeg",
   },
   zone3: {
     habitants: "img/zone3-habitant.jpg",
