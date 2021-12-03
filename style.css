@@ -69,25 +69,25 @@ img.marker {
 img#zone1-map {
   position: relative;
   left: 870px;
-  top: 200px;
+  top: 160px;
 }
 
 img#zone2-map {
   position: relative;
   left: 750px;
-  top: 190px;
+  top: 140px;
 }
 
 img#zone3-map {
   position: relative;
   left: 705px;
-  top: 170px;
+  top: 130px;
 }
 
 img#zone4-map {
   position: relative;
   left: 620px;
-  top: 270px;
+  top: 240px;
 }
 
 /**************************************************************************
