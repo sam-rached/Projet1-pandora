@@ -125,18 +125,26 @@ function launchAnimation() {
     const vw = window.innerWidth;
     const vh = window.innerHeight;
 
-    let posX = 0, posY = vw/2;
+    let posX = vw/2, posY = 0;
+    let moveX = null, numberMoveX = 0;
     clearInterval(idAnimation);
     idAnimation = setInterval(frame, 10);
     function frame() {
         if (posY > vh+img.height+50) {
             clearInterval(idAnimation);
         } else {
-            posX++;
-            posY += getRandomIntInclusive(-1,1);
+            // On garde le même mouvement latéral sur 5 frames
+            if (numberMoveX === 0){
+              numberMoveX = 5;
+              moveX = getRandomIntInclusive(-1,1);
+            } else {
+              numberMoveX--;
+            }
+            posY++;
+            posX += moveX;
 
-            img.style.top = posX + 'px';
-            img.style.left = posY + 'px';
+            img.style.top = posY + 'px';
+            img.style.left = posX + 'px';
         }
     }
 }
