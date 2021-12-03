@@ -133,7 +133,8 @@ function launchAnimation() {
     }
     const img = document.getElementById('woodSprite');
     const vw = window.innerWidth;
-    const vh = window.innerHeight;
+    //const vh = window.innerHeight;
+    const vh = document.height;
 
     let posX = vw/2, posY = 0;
     let moveX = null, numberMoveX = 0;
