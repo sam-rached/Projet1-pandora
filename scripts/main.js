@@ -67,6 +67,16 @@ const titles = {
 function clickOnZone(event){
     event.preventDefault();
     
+    let squares = document.getElementsByClassName('square');
+    for (const square of squares) {
+      console.log(`display: ${square.style.display}`);
+      if (square.style.display === '') {
+        square.style.display = 'inline-block';
+      }
+      console.log(`display: ${square.style.display}`);
+
+      console.table(square);
+    }  
     // this.id contient l'id de l'élément li, zone1 par exemple
     // dans les éléments <li> on récupère un id comme zone1
     // dans les éléments <a> on récupère un id comme zone1-map

@@ -48,23 +48,23 @@ img.marker {
 }
 img#zone1-map {
   position: relative;
-  left: 200px;
-  top: 100px;
+  left: 870px;
+  top: 220px;
 }
 img#zone2-map {
   position: relative;
-  left: 300px;
-  top: 100px;
+  left: 750px;
+  top: 200px;
 }
 img#zone3-map {
   position: relative;
-  left: 200px;
-  top: 200px;
+  left: 705px;
+  top: 190px;
 }
 img#zone4-map {
   position: relative;
-  left: 400px;
-  top: 250px;
+  left: 620px;
+  top: 290px;
 }
 
 /**************************************************************************
@@ -121,13 +121,16 @@ img#zone4-map {
   color: darkslategrey;
   text-align: center;
 }
+
 .area {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .square {
-  display: inline-block;
+  /*display: inline-block;*/
+  display: none;
   text-align: center;
   background-color: darkslategrey;
   margin: 30px;
