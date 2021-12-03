@@ -69,13 +69,9 @@ function clickOnZone(event){
     
     let squares = document.getElementsByClassName('square');
     for (const square of squares) {
-      console.log(`display: ${square.style.display}`);
       if (square.style.display === '') {
         square.style.display = 'inline-block';
       }
-      console.log(`display: ${square.style.display}`);
-
-      console.table(square);
     }  
     // this.id contient l'id de l'élément li, zone1 par exemple
     // dans les éléments <li> on récupère un id comme zone1
@@ -133,16 +129,16 @@ function launchAnimation() {
     }
     const img = document.getElementById('woodSprite');
     const vw = window.innerWidth;
-    //const vh = window.innerHeight;
-    const vh = document.height;
+    const verticalLimit = document.body.clientHeight - img.height - 100;
 
     let posX = vw/2, posY = 0;
     let moveX = null, numberMoveX = 0;
     clearInterval(idAnimation);
     idAnimation = setInterval(frame, 10);
     function frame() {
-        if (posY > vh+img.height+50) {
+        if (posY >= verticalLimit) {
             clearInterval(idAnimation);
+            img.style.display = "none";
         } else {
             // On garde le même mouvement latéral sur 5 frames
             if (numberMoveX === 0){
