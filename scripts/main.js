@@ -115,9 +115,11 @@ function clickOnZone(event){
 
 function main(){
   // On assigne les callback quand on clique sur la barre nav
-  for (const li of document.querySelectorAll("nav li"))
-    li.onclick = clickOnZone;
-
+  for (const li of document.querySelectorAll("nav li")){
+    if (li.id.includes('zone'))
+      li.onclick = clickOnZone;
+  }
+  
   // On assigne les callback quand on clique sur les marqueurs de la carte
   for (const a of document.querySelectorAll("header a"))
     a.onclick = clickOnZone;
