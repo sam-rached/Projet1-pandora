@@ -76,7 +76,13 @@ li {
   padding: 10px;
 }
 
-li:hover {
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+li:hover,
+a:hover {
   background-color: var(--second-color);
   color: var(--lighter-color);
   cursor: pointer;
