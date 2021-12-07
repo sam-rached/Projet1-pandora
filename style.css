@@ -30,12 +30,9 @@ body {
 }
 
 header {
-  height: 400px;
-  width: auto;
-  background-color: var(--main-color);
-  background-image: url("img/map.png");
-  background-size: cover;
-  overflow: hidden; /* pour que la carte ne dépasse pas du header */
+  height: auto;
+  width: 100%;
+  /* overflow: hidden; pour que la carte ne dépasse pas du header */
 }
 
 .mainTitle {
