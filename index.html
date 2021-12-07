@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <title>Visitez Pandora</title>
         <link rel="stylesheet" href="style.css">
+        <script src="scripts/main.js"></script>
+        <script src="scripts/animation.js"></script>
     </head>
 
     <body>
@@ -101,18 +103,17 @@
                 <p>Nous contacter</p>
                 <p>FAQ</p>
             </div>
-                    <figure>
-    <figcaption>Ecoutez l'hymne de Pandora :</figcaption>
-    <audio
-        autoplay
-        controls
-        src="snd/music.ogg">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-<script src="scripts/main.js"></script>
+            <figure>
+                <figcaption>Ecoutez l'hymne de Pandora :</figcaption>
+                    <audio
+                        autoplay
+                        controls
+                        src="snd/music.ogg">
+                        Your browser does not support the
+                        <code>audio</code> element.
+                    </audio>
+            </figure>
+            <script>main();</script>
         </footer>
-
     </body>
 </html>
