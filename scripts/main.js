@@ -109,6 +109,7 @@ function clickOnZone(event){
     const title = document.getElementById('name-area');
     title.innerHTML = titles[zone];
     title.scrollIntoView();
+    stopAnimation(); // if running
     startAnimation();
 }
 

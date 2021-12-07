@@ -204,9 +204,10 @@ footer {
   text-align: center;
 }
 
-/* Woodsprite */
-#woodSprite {
+/* Woodsprites */
+.woodSprite {
   position: absolute; /* relative;*/
   top: -100px;
   height: 60px;
 }
+
