@@ -36,10 +36,12 @@ header {
 }
 
 .mainTitle {
+  position: absolute;
   padding: 20px;
   font-size: 40px;
   color: var(--lighter-color);
   text-shadow: 0.1em 0.1em #333;
+  z-index: 2;
 }
 
 svg {
