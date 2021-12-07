@@ -244,3 +244,46 @@ footer {
   top: -100px;
   height: 60px;
 }
+
+@media screen and (max-width: 800px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+    background-image:url(img\map-column.png);
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  ul {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border: 0px;
+    list-style-type: none;
+    background-color: var(--lighter-color);
+    color: var(--main-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  li:hover { 
+    background-color: inherit;
+    color: var(--main-color);
+  }
+
+  .reservation:hover {
+    background-color: inherit;
+    color: var(--main-color);
+  }
+
+  .area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .square {
+    display: flex;
+    flex-direction: column;
+  }
+}
