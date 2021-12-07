@@ -1,3 +1,6 @@
+//import { startAnimation } from './animation.js';
+//const startAnimation = require('./animation');
+
 /* Textes et images variables qu'on utilisera pour remplir nos box.
  * On peut revoir l'organisation (tout dans un seul objet, clés utilisées...)
  */
@@ -106,52 +109,18 @@ function clickOnZone(event){
     const title = document.getElementById('name-area');
     title.innerHTML = titles[zone];
     title.scrollIntoView();
-    launchAnimation();
+    stopAnimation(); // if running
+    startAnimation();
 }
 
-// On assigne les callback quand on clique sur la barre nav
-for (const li of document.querySelectorAll("nav li")) {
-  li.onclick = clickOnZone;
-}
-
-// On assigne les callback quand on clique sur les marqueurs de la carte
-for (const a of document.querySelectorAll("header a")) {
-  a.onclick = clickOnZone;
-}
-
-/* WoodSprite animation */
-let idAnimation = null;
-function launchAnimation() {
-    function getRandomIntInclusive(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min +1)) + min;
-    }
-    const img = document.getElementById('woodSprite');
-    const vw = window.innerWidth;
-    const verticalLimit = document.body.clientHeight - img.height - 100;
-
-    let posX = vw/2, posY = 0;
-    let moveX = null, numberMoveX = 0;
-    clearInterval(idAnimation);
-    idAnimation = setInterval(frame, 10);
-    function frame() {
-        if (posY >= verticalLimit) {
-            clearInterval(idAnimation);
-            img.style.display = "none";
-        } else {
-            // On garde le même mouvement latéral sur 5 frames
-            if (numberMoveX === 0){
-              numberMoveX = 5;
-              moveX = getRandomIntInclusive(-1,1);
-            } else {
-              numberMoveX--;
-            }
-            posY++;
-            posX += moveX;
-
-            img.style.top = posY + 'px';
-            img.style.left = posX + 'px';
-        }
-    }
+function main(){
+  // On assigne les callback quand on clique sur la barre nav
+  for (const li of document.querySelectorAll("nav li")){
+    if (li.id.includes('zone'))
+      li.onclick = clickOnZone;
+  }
+  
+  // On assigne les callback quand on clique sur les marqueurs de la carte
+  for (const a of document.querySelectorAll("header a"))
+    a.onclick = clickOnZone;
 }

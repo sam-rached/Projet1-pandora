@@ -1,8 +1,8 @@
 :root {
   --main-color: #046dcc;
   --second-color: #046dcc;
-  --bright-color: #6E4AAD;
-  --darker-color: #2F4858;
+  --bright-color: #6e4aad;
+  --darker-color: #2f4858;
   --lighter-color: white;
 }
 
@@ -12,23 +12,51 @@ body {
   font-style: oblique;
   margin: 0px;
   text-align: justify;
-  background-image: linear-gradient(to right top, #2b14c6, #293cd3, #3458dc, #4871e2, #6089e6, #5a9cef, #5daef4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image: linear-gradient(
+    to right top,
+    #2b14c6,
+    #293cd3,
+    #3458dc,
+    #4871e2,
+    #6089e6,
+    #5a9cef,
+    #5daef4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
 }
 
 header {
-  height: 400px;
-  width: auto;
-  background-color: var(--main-color);
-  background-image: url("img/map.png");
-  background-size: cover;
-  overflow: hidden; /* pour que la carte ne dépasse pas du header */
+  height: auto;
+  width: 100%;
+  /* overflow: hidden; pour que la carte ne dépasse pas du header */
 }
 
 .mainTitle {
+  position: absolute;
   padding: 20px;
   font-size: 40px;
   color: var(--lighter-color);
   text-shadow: 0.1em 0.1em #333;
+  z-index: 2;
+}
+
+svg {
+  cursor: move;
+}
+path,
+ellipse,
+rect {
+  fill: transparent;
+}
+
+path:hover,
+ellipse:hover,
+rect:hover {
+  fill: yellow;
 }
 
 ul {
@@ -48,7 +76,13 @@ li {
   padding: 10px;
 }
 
-li:hover {
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+li:hover,
+a:hover {
   background-color: var(--second-color);
   color: var(--lighter-color);
   cursor: pointer;
@@ -204,9 +238,9 @@ footer {
   text-align: center;
 }
 
-/* Woodsprite */
-#woodSprite {
-  position: relative;
-  left: -500px;
+/* Woodsprites */
+.woodSprite {
+  position: absolute; /* relative;*/
+  top: -100px;
   height: 60px;
 }

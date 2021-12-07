@@ -1,0 +1,215 @@
+:root {
+  --main-color: #046dcc;
+  --second-color: #046dcc;
+  --bright-color: #6e4aad;
+  --darker-color: #2f4858;
+  --lighter-color: white;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-style: oblique;
+  /* overflow: hidden; */
+  background-image: linear-gradient(
+    to right top,
+    #2b14c6,
+    #293cd3,
+    #3458dc,
+    #4871e2,
+    #6089e6,
+    #5a9cef,
+    #5daef4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  /* min-height: 100vh; */
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* .nav {
+  border-bottom: 1px solid gray;
+} */
+
+.nav-toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0 1rem;
+  right: 0;
+  border: none;
+}
+
+svg {
+  width: 1.6rem;
+  fill: var(--bright-color);
+}
+
+.close {
+  display: none;
+}
+
+.menu {
+  margin-top: 0.2rem;
+}
+.nav-checkbox {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--lighter-color);
+  color: var(--main-color);
+  justify-content: space-evenly;
+}
+
+li.nav-item {
+  padding: 10px;
+  display: none;
+}
+
+#nav-checkbox:checked ~ ul.nav-menu li {
+  display: flex;
+}
+
+#nav-checkbox:checked ~ label.nav-toggle .close {
+  display: block;
+  padding: 10px 0;
+}
+#nav-checkbox:checked ~ label.nav-toggle .menu {
+  display: none;
+  padding: 10px 0;
+}
+
+a.nav-link {
+  padding: 10px;
+  text-decoration: none;
+  color: --lighter-color;
+  letter-spacing: 0.1rem;
+}
+
+a.nav-link:hover {
+  color: --lighter-color;
+  background-color: var(--second-color);
+  color: var(--lighter-color);
+  cursor: pointer;
+}
+
+.main-menu {
+  width: 100vw;
+  height: 91vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.title {
+  width: 100vw;
+  height: 5vh;
+  text-align: center;
+}
+
+form.form-menu {
+  margin: 5vh auto;
+  width: 40vw;
+  height: 70vh;
+  color: whitesmoke;
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.15);
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  line-height: 1.5rem;
+  flex-direction: column;
+
+  border-radius: 5px;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+label,
+input,
+textarea,
+button {
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: whitesmoke;
+  box-shadow: var(--main-color);
+}
+input,
+textarea,
+button {
+  line-height: 1.5;
+  background-color: transparent;
+  resize: none;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0px 1px 15px 5px rgba(47, 72, 88, 0.97);
+}
+
+button:active {
+  outline: transparent;
+  box-shadow: 0px 1px 15px 5px rgba(47, 72, 88, 0.97);
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-style: oblique;
+  color: var(--lighter-color);
+  font-size: 0.6em;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.footer {
+  position: relative;
+  height: 50px;
+  width: auto;
+  background-color: var(--second-color);
+  text-align: center;
+}
+.div-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.div-footer p {
+  padding: 0 5px;
+}
+/********* responsive ******* */
+
+@media only screen and (min-width: 560px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  ul.nav-menu li {
+    display: flex;
+    justify-content: center;
+  }
+  li.nav-item {
+    padding: 10px;
+  }
+  .div-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .main-menu {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

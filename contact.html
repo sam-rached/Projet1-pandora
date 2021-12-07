@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Contact</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link href="./contact.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav">
+      <input
+        type="checkbox"
+        name=" checkbox"
+        id="nav-checkbox"
+        class="nav-checkbox"
+      />
+      <label for="nav-checkbox" class="nav-toggle">
+        <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+          <path
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+          />
+        </svg>
+        <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          />
+        </svg>
+      </label>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="/index.html" class="nav-link">Intro</a>
+        </li>
+        <li class="nav-item"><a href="/main.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">la Team</a></li>
+      </ul>
+    </nav>
+    <main class="main-menu">
+      <div class="title">
+        <h2>Préparez votre séjour</h2>
+      </div>
+      <form action="" class="form-menu">
+        <div class="form">
+          <label for="name">Nom</label>
+          <input type="text" id="name" placeholder="laissez votre nom" />
+        </div>
+        <div class="form">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="laissez votre email" />
+        </div>
+        <div class="form">
+          <label for="trip">Choix de la destination</label>
+          <select name="trip" id="trip">
+            <option value="Amazonia">Amazonia</option>
+            <option value="Night">Pandora by Night</option>
+            <option value="Valley">Vallée des Paiquores</option>
+            <option value="islands">Floating Islands</option>
+          </select>
+        </div>
+        <div class="form">
+          <label for="passenger">Nombre de personne</label>
+          <select name="passenger" id="passenger">
+            <option value="1">Une personne</option>
+            <option value="2">Deux personnes</option>
+            <option value="3">Trois personnes</option>
+            <option value="4">Quatre personnes</option>
+            <option value="et plus">et plus</option>
+          </select>
+          <br />
+          <button>Envoyer</button>
+        </div>
+      </form>
+      <form action="" class="form-menu">
+        <div class="form">
+          <div><span id="nightPrice">46</span> € / nuit</div>
+          <label for="">Date de début</label>
+          <input id="start_date" type="date" required /><br />
+        </div>
+        <div class="form">
+          <label for="">Date de fin</label>
+          <input id="end_date" type="date" required /><br />
+          <button class="btn btn cyan accent-3">Validez</button>
+          <h2>Total : <span id="total"></span> €</h2>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="div-footer">
+        <p>Copyright</p>
+        <p>Nous contacter</p>
+        <p>FAQ</p>
+      </div>
+    </footer>
+    <script src="contact.js"></script>
+  </body>
+</html>
