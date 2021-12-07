@@ -206,7 +206,7 @@ footer {
 
 /* Woodsprite */
 #woodSprite {
-  position: relative;
-  left: -500px;
+  position: absolute; /* relative;*/
+  top: -100px;
   height: 60px;
 }
