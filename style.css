@@ -1,8 +1,8 @@
 :root {
   --main-color: #046dcc;
   --second-color: #046dcc;
-  --bright-color: #6E4AAD;
-  --darker-color: #2F4858;
+  --bright-color: #6e4aad;
+  --darker-color: #2f4858;
   --lighter-color: white;
 }
 
@@ -12,7 +12,21 @@ body {
   font-style: oblique;
   margin: 0px;
   text-align: justify;
-  background-image: linear-gradient(to right top, #2b14c6, #293cd3, #3458dc, #4871e2, #6089e6, #5a9cef, #5daef4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image: linear-gradient(
+    to right top,
+    #2b14c6,
+    #293cd3,
+    #3458dc,
+    #4871e2,
+    #6089e6,
+    #5a9cef,
+    #5daef4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
 }
 
 header {
