@@ -45,6 +45,21 @@ header {
   text-shadow: 0.1em 0.1em #333;
 }
 
+svg {
+  cursor: move;
+}
+path,
+ellipse,
+rect {
+  fill: transparent;
+}
+
+path:hover,
+ellipse:hover,
+rect:hover {
+  fill: yellow;
+}
+
 ul {
   padding: 0px;
   margin-bottom: 30px;
@@ -224,4 +239,3 @@ footer {
   top: -100px;
   height: 60px;
 }
-
