@@ -249,9 +249,10 @@ footer {
   body {
     margin: 0px;
     padding: 0px;
-    background-image:url(img\map-column.png);
+    background-image: url("img/map-column.png");
     background-attachment: fixed;
     background-position: center;
+    background-size: cover;
   }
 
   ul {
