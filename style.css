@@ -188,10 +188,6 @@ img#zone4-map {
   align-items: center;
 }
 
-.square {
-
-}
-
 .category-square {
   display: flex;
   /*display: inline-block;*/
@@ -280,11 +276,6 @@ footer {
   }
 
   .area {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .square {
     display: flex;
     flex-direction: column;
   }

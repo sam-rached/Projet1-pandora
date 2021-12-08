@@ -79,8 +79,7 @@ function clickOnZone(event){
   console.log('clickOnZone');
   let articles = document.getElementsByClassName('category-square');
   for (const article of articles) {
-    console.log(article);
-    if (article.style.display === '') {
+     if (article.style.display === '') {
       article.style.display = 'flex';
     }
   }
