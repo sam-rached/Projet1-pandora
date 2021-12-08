@@ -213,3 +213,45 @@ textarea::placeholder {
     flex-wrap: wrap;
   }
 }
+
+@media screen and (max-width: 767px) {
+
+  svg {
+    width: 1.6rem;
+    fill: var(--lighter-color);
+  }
+
+  .title {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .main-menu {
+    font-family: "Prompt", sans-serif;
+    color: white;
+    font-style: oblique;
+    margin: 0px;
+    padding-bottom: 20px;
+    border-bottom: var(--lighter-color) solid 2px;
+    /* overflow: hidden; */
+    background-color: var(--darker-color);
+    /* min-height: 100vh; */
+  }
+
+  .form-menu {
+    margin-right: 20px;
+  }
+
+  .footer {
+    font-family: "Prompt", sans-serif;
+    color: white;
+    font-style: oblique;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    /* overflow: hidden; */
+    background-color: var(--darker-color);
+    /* min-height: 100vh; */
+  }
+  
+}

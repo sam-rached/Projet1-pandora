@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Prompt", sans-serif;
   color: white;
   font-style: oblique;
   margin: 0px;
@@ -38,9 +38,10 @@ header {
 .mainTitle {
   position: absolute;
   padding: 20px;
+  font-family:"Permanent Marker", cursive;
   font-size: 40px;
   color: var(--lighter-color);
-  text-shadow: 0.1em 0.1em #333;
+  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.4);
   z-index: 2;
 }
 
@@ -177,8 +178,8 @@ img#zone4-map {
 }
 
 #name-area {
-  font-size: 30px;
-  color: var(--bright-color);
+  font-size: 38px;
+  color: var(--lighter-color);
   text-align: center;
 }
 
@@ -243,6 +244,7 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+
   body {
     margin: 0px;
     padding: 0px;
@@ -252,6 +254,16 @@ footer {
     background-size: cover;
   }
 
+  .mainTitle {
+    position: absolute;
+    padding: 10px;
+    font-family:"Permanent Marker", cursive;
+    font-size: 28px;
+    color: var(--lighter-color);
+    text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
   ul {
     padding: 0px;
     margin-top: 0px;
@@ -275,8 +287,35 @@ footer {
     color: var(--main-color);
   }
 
+  .carousel {
+    position: relative;
+    width: 85vw;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 8px 8px 4px -3px rgba(0, 0, 0, 0.4);
+  }
+
+  #name-area {
+    font-size: 30px;
+    color: var(--lighter-color);
+    text-align: center;
+  }
+
   .area {
     display: flex;
     flex-direction: column;
+  }
+
+  .footer {
+    padding: 0px;
+    margin-top: 0px;
+    border: 0px;
+    background-color: var(--lighter-color);
+    color: var(--main-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
