@@ -39,7 +39,7 @@ header {
 .mainTitle {
   position: absolute;
   padding: 20px;
-  font-family:"Permanent Marker", cursive;
+  font-family: "Permanent Marker", cursive;
   font-size: 40px;
   color: var(--lighter-color);
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.4);
@@ -52,7 +52,9 @@ svg {
 path,
 ellipse,
 rect {
+  transform: scale(1.1) translate(-40px, -10px);
   fill: transparent;
+  transition: 0.2s ease-in-out;
 }
 
 path:hover,
@@ -245,7 +247,6 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-
   body {
     margin: 0px;
     padding: 0px;
@@ -258,13 +259,13 @@ footer {
   .mainTitle {
     position: absolute;
     padding: 10px;
-    font-family:"Permanent Marker", cursive;
+    font-family: "Permanent Marker", cursive;
     font-size: 28px;
     color: var(--lighter-color);
     text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.4);
     z-index: 1;
   }
-  
+
   ul {
     padding: 0px;
     margin-top: 0px;
@@ -277,8 +278,8 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  
-  li:hover { 
+
+  li:hover {
     background-color: inherit;
     color: var(--main-color);
   }
