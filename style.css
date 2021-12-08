@@ -200,7 +200,7 @@ img#zone4-map {
   background-color: var(--lighter-color);
   margin: 30px;
   width: 400px;
-  height: 500px;
+  height: 680px;
   border-radius: 10px;
   box-shadow: 8px 8px 4px -3px rgba(0, 0, 0, 0.7);
   flex-direction: column;

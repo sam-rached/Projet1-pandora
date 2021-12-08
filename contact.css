@@ -230,6 +230,7 @@ textarea::placeholder {
     font-family: "Prompt", sans-serif;
     color: white;
     font-style: oblique;
+    width: 100vw;
     margin: 0px;
     padding-bottom: 20px;
     border-bottom: var(--lighter-color) solid 2px;
