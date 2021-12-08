@@ -68,49 +68,58 @@ const titles = {
 }
 
 function clickOnZone(event){
-    event.preventDefault();
+  event.preventDefault();
     
-    let squares = document.getElementsByClassName('square');
-    for (const square of squares) {
-      if (square.style.display === '') {
-        square.style.display = 'inline-block';
-      }
-    }  
-    // this.id contient l'id de l'élément li, zone1 par exemple
-    // dans les éléments <li> on récupère un id comme zone1
-    // dans les éléments <a> on récupère un id comme zone1-map
-    // donc on fait un split et on prend la première partie (toujours zone1)
-    let zone = event.target.id.split('-')[0];
+  let squares = document.getElementsByClassName('square');
+  for (const square of squares) {
+    if (square.style.display === '') {
+      square.style.display = 'inline-block';
+    }
+  }
+  console.log('clickOnZone');
+  let articles = document.getElementsByClassName('category-square');
+  for (const article of articles) {
+    console.log(article);
+    if (article.style.display === '') {
+      article.style.display = 'flex';
+    }
+  }
 
-    let article = document.getElementById('habitants');
-    if (habitants[zone])
-        article.getElementsByTagName('p')[0].innerHTML = habitants[zone];
-    if (images[zone] && images[zone]['habitants'])
-        article.getElementsByTagName('img')[0].src = images[zone]['habitants'];
+  // this.id contient l'id de l'élément li, zone1 par exemple
+  // dans les éléments <li> on récupère un id comme zone1
+  // dans les éléments <a> on récupère un id comme zone1-map
+  // donc on fait un split et on prend la première partie (toujours zone1)
+  let zone = event.target.id.split('-')[0];
 
-    article = document.getElementById('food');
-    if (food[zone])
-        article.getElementsByTagName('p')[0].innerHTML = food[zone];
-    if (images[zone] && images[zone]['food'])
-        article.getElementsByTagName('img')[0].src = images[zone]['food'];
+  let article = document.getElementById('habitants');
+  if (habitants[zone])
+    article.getElementsByTagName('p')[0].innerHTML = habitants[zone];
+  if (images[zone] && images[zone]['habitants'])
+    article.getElementsByTagName('img')[0].src = images[zone]['habitants'];
 
-    article = document.getElementById('nature');
-    if (nature[zone])
-        article.getElementsByTagName('p')[0].innerHTML = nature[zone];
-    if (images[zone] && images[zone]['nature'])
-        article.getElementsByTagName('img')[0].src = images[zone]['nature'];
-    
-    article = document.getElementById('customs');
-    if (customs[zone])
-        article.getElementsByTagName('p')[0].innerHTML = customs[zone];
-    if (images[zone] && images[zone]['customs'])
-        article.getElementsByTagName('img')[0].src = images[zone]['customs'];
+  article = document.getElementById('food');
+  if (food[zone])
+    article.getElementsByTagName('p')[0].innerHTML = food[zone];
+  if (images[zone] && images[zone]['food'])
+    article.getElementsByTagName('img')[0].src = images[zone]['food'];
 
-    const title = document.getElementById('name-area');
-    title.innerHTML = titles[zone];
-    title.scrollIntoView();
-    stopAnimation(); // if running
-    startAnimation();
+  article = document.getElementById('nature');
+  if (nature[zone])
+    article.getElementsByTagName('p')[0].innerHTML = nature[zone];
+  if (images[zone] && images[zone]['nature'])
+    article.getElementsByTagName('img')[0].src = images[zone]['nature'];
+  
+  article = document.getElementById('customs');
+  if (customs[zone])
+    article.getElementsByTagName('p')[0].innerHTML = customs[zone];
+  if (images[zone] && images[zone]['customs'])
+    article.getElementsByTagName('img')[0].src = images[zone]['customs'];
+
+  const title = document.getElementById('name-area');
+  title.innerHTML = titles[zone];
+  title.scrollIntoView();
+  stopAnimation(); // if running
+  startAnimation();
 }
 
 function main(){
