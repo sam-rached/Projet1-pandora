@@ -247,11 +247,14 @@ textarea::placeholder {
     color: white;
     font-style: oblique;
     width: 100%;
-    margin: 0;
-    padding-bottom: 20px;
+    margin: 0px;
     /* overflow: hidden; */
     background-color: var(--darker-color);
     /* min-height: 100vh; */
   }
   
+  div.div-footer {
+    background-color: var(--darker-color);
+    width: 100vw;
+  }
 }

@@ -10,8 +10,9 @@ body {
   font-family: "Prompt", sans-serif;
   color: white;
   font-style: oblique;
-  margin: 0px;
   text-align: justify;
+  margin: 0px;
+  width: 100%;
   background-image: linear-gradient(
     to right top,
     #2b14c6,
