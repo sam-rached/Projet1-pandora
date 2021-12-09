@@ -47,20 +47,27 @@ header {
 }
 
 svg {
-  cursor: move;
+  cursor: help;
 }
-path,
-ellipse,
-rect {
-  transform: scale(1.1) translate(-40px, -10px);
+path {
   fill: transparent;
-  transition: 0.2s ease-in-out;
 }
 
-path:hover,
-ellipse:hover,
-rect:hover {
+path#zone1-map:hover {
+  opacity: 0.25;
   fill: yellow;
+}
+path#zone2-map:hover {
+  opacity: 0.25;
+  fill: red;
+}
+path#zone3-map:hover {
+  opacity: 0.25;
+  fill: blue;
+}
+path#zone4-map:hover {
+  opacity: 0.25;
+  fill: rgb(28, 197, 12);
 }
 
 ul {
