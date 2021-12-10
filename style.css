@@ -6,13 +6,19 @@
   --lighter-color: white;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Prompt", sans-serif;
   color: white;
   font-style: oblique;
   text-align: justify;
   margin: 0px;
-  width: 100%;
+  width: 100vw;
   background-image: linear-gradient(
     to right top,
     #2b14c6,
@@ -240,12 +246,35 @@ img#zone4-map {
 }
 
 footer {
-  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100px; */
   width: auto;
   background-color: var(--second-color);
   text-align: center;
 }
 
+div.footer {
+  width: 80%;
+  display: inherit;
+  justify-content: space-around;
+}
+
+i {
+  width: 20px;
+  height: 20px;
+  background-color: var(--lighter-color);
+  border-radius: 50%;
+  color: var(--lighter-color);
+}
+i:hover {
+  color: var(--second-color);
+}
+
+.listenAnthem {
+  width: 30%;
+}
 /* Woodsprites */
 .woodSprite {
   position: absolute; /* relative;*/
@@ -306,6 +335,29 @@ footer {
     box-shadow: 8px 8px 4px -3px rgba(0, 0, 0, 0.4);
   }
 
+  @keyframes carousel {
+    0%,
+    20% {
+      transform: translateX(0);
+    }
+    25%,
+    45% {
+      transform: translateX(-85vw);
+    }
+    50%,
+    70% {
+      transform: translateX(-170vw);
+    }
+    75%,
+    95% {
+      transform: translateX(-255vw);
+    }
+
+    100% {
+      transform: translateX(-340vw);
+    }
+  }
+
   #name-area {
     font-size: 30px;
     color: var(--lighter-color);
@@ -318,13 +370,36 @@ footer {
   }
 
   .footer {
-    padding: 0px;
-    margin-top: 0px;
-    border: 0px;
-    background-color: var(--lighter-color);
-    color: var(--main-color);
+    padding: 18px 0;
+    margin-top: 0;
+    border: 0;
+    color: var(--lighter-color);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-center;
+  }
+  div.footer {
+    width: 50%;
+    display: inherit;
+    justify-content: space-center;
+  }
+
+  i {
+    width: 15px;
+    height: 15px;
+    background-color: var(--lighter-color);
+    border-radius: 50%;
+    color: var(--lighter-color);
+  }
+  i:hover {
+    color: var(--second-color);
+  }
+
+  audio {
+    width: 200px;
+    height: 40px;
+  }
+
+  .listenAnthem {
+    width: 50%;
   }
 }
