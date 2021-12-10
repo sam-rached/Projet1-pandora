@@ -6,12 +6,19 @@
   --lighter-color: white;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Prompt", sans-serif;
   color: white;
   font-style: oblique;
-  margin: 0px;
   text-align: justify;
+  margin: 0px;
+  width: 100vw;
   background-image: linear-gradient(
     to right top,
     #2b14c6,
@@ -38,25 +45,35 @@ header {
 .mainTitle {
   position: absolute;
   padding: 20px;
+  font-family: "Permanent Marker", cursive;
   font-size: 40px;
   color: var(--lighter-color);
-  text-shadow: 0.1em 0.1em #333;
+  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.4);
   z-index: 2;
 }
 
 svg {
-  cursor: move;
+  cursor: help;
 }
-path,
-ellipse,
-rect {
+path {
   fill: transparent;
 }
 
-path:hover,
-ellipse:hover,
-rect:hover {
+path#zone1-map:hover {
+  opacity: 0.25;
   fill: yellow;
+}
+path#zone2-map:hover {
+  opacity: 0.25;
+  fill: red;
+}
+path#zone3-map:hover {
+  opacity: 0.25;
+  fill: blue;
+}
+path#zone4-map:hover {
+  opacity: 0.25;
+  fill: rgb(28, 197, 12);
 }
 
 ul {
@@ -80,6 +97,9 @@ a {
   text-decoration: none;
   color: var(--main-color);
 }
+a:visited {
+  color: var(--lighter-color);
+}
 
 li:hover,
 a:hover {
@@ -96,7 +116,7 @@ a:hover {
   width: 100%;
 }
  */
-img.marker {
+/* img.marker {
   height: 20px;
 }
 
@@ -122,7 +142,7 @@ img#zone4-map {
   position: relative;
   left: 620px;
   top: 240px;
-}
+}*/
 
 /**************************************************************************
 ** SECTION CAROUSEL
@@ -178,8 +198,8 @@ img#zone4-map {
 }
 
 #name-area {
-  font-size: 30px;
-  color: var(--bright-color);
+  font-size: 38px;
+  color: var(--lighter-color);
   text-align: center;
 }
 
@@ -189,20 +209,17 @@ img#zone4-map {
   align-items: center;
 }
 
-.square {
+.category-square {
+  display: flex;
   /*display: inline-block;*/
   display: none;
   text-align: center;
   background-color: var(--lighter-color);
   margin: 30px;
-  width: 400px;
-  height: 500px;
+  width: 420px;
+  height: 680px;
   border-radius: 10px;
   box-shadow: 8px 8px 4px -3px rgba(0, 0, 0, 0.7);
-}
-
-.category-square {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -214,8 +231,10 @@ img#zone4-map {
 }
 
 .category-img {
-  width: 80%;
+  width: 90%;
   height: 40%;
+  overflow: hidden;
+  object-fit: cover;
   margin: 10px;
   border-radius: 5px;
   box-shadow: 6px 6px 3px -2px rgba(0, 0, 0, 0.7);
@@ -233,15 +252,161 @@ img#zone4-map {
 }
 
 footer {
-  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 100px; */
   width: auto;
   background-color: var(--second-color);
   text-align: center;
 }
 
+div.footer {
+  width: 80%;
+  display: inherit;
+  justify-content: space-between;
+  align-items: cbaseline;
+}
+
+i {
+  width: 40px;
+  height: 40px;
+  background-color: var(--second-color);
+  border-radius: 50%;
+  color: var(--lighter-color);
+}
+
+.listenAnthem {
+  width: 30%;
+}
 /* Woodsprites */
 .woodSprite {
   position: absolute; /* relative;*/
-  top: -100px;
-  height: 60px;
+  top: -120px;
+  height: 120px;
+}
+
+.faq {
+  
+}
+@media screen and (max-width: 800px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("img/map-column.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .mainTitle {
+    position: absolute;
+    padding: 10px;
+    font-family: "Permanent Marker", cursive;
+    font-size: 28px;
+    color: var(--lighter-color);
+    text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  ul {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border: 0px;
+    list-style-type: none;
+    background-color: var(--lighter-color);
+    color: var(--main-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  li:hover {
+    background-color: inherit;
+    color: var(--main-color);
+  }
+
+  .reservation:hover {
+    background-color: inherit;
+    color: var(--main-color);
+  }
+
+  .carousel {
+    position: relative;
+    width: 85vw;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 8px 8px 4px -3px rgba(0, 0, 0, 0.4);
+  }
+
+  @keyframes carousel {
+    0%,
+    20% {
+      transform: translateX(0);
+    }
+    25%,
+    45% {
+      transform: translateX(-85vw);
+    }
+    50%,
+    70% {
+      transform: translateX(-170vw);
+    }
+    75%,
+    95% {
+      transform: translateX(-255vw);
+    }
+
+    100% {
+      transform: translateX(-340vw);
+    }
+  }
+
+  #name-area {
+    font-size: 30px;
+    color: var(--lighter-color);
+    text-align: center;
+  }
+
+  .area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 18px 0;
+    margin-top: 0;
+    border: 0;
+    color: var(--lighter-color);
+    display: flex;
+    justify-content: space-center;
+  }
+  div.footer {
+    width: 50%;
+    display: inherit;
+    justify-content: space-center;
+  }
+
+  i {
+    width: 15px;
+    height: 15px;
+    background-color: var(--lighter-color);
+    border-radius: 50%;
+    color: var(--secondary-color);
+  }
+
+  audio {
+    width: 200px;
+    height: 40px;
+  }
+
+  .listenAnthem {
+    width: 50%;
+  }
+  .woodSprite {
+    height: 60px;
+  }
 }

@@ -6,11 +6,11 @@ start.value = today;
 start.min = today;
 
 const tomorrowDate = () => {
-    let day = new Date(today);
-    day.setDate(day.getDate() + 1);
-    let tomorrow = day.toISOString().split("T")[0];
-    end.min = tomorrow;
-    end.value = tomorrow;
+  let day = new Date(today);
+  day.setDate(day.getDate() + 1);
+  let tomorrow = day.toISOString().split("T")[0];
+  end.min = tomorrow;
+  end.value = tomorrow;
 };
 tomorrowDate();
 
@@ -34,11 +34,18 @@ const bookingTotal = () => {
   let diffTime = Math.abs(date2 - date1);
 
   let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-  let nightPrice = document.getElementById("nightPrice").innerHTML;
 
-  let total = diffDays * nightPrice;
-  document.getElementById("total").innerHTML = total
+  let trip = document.getElementById("trip");
+  let passenger = document.getElementById("passenger");
+  let totalPrice = trip.value * passenger.value;
+  document.getElementById("nightPrice").innerHTML = totalPrice;
+
+  let total = diffDays * totalPrice;
+  document.getElementById("total").innerHTML = total;
 };
 start.addEventListener("change", () => bookingTotal());
 end.addEventListener("change", () => bookingTotal());
+trip.addEventListener("change", () => bookingTotal());
+passenger.addEventListener("change", () => bookingTotal());
+
 bookingTotal();
