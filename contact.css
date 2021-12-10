@@ -83,6 +83,7 @@ li.nav-item {
 #nav-checkbox:checked ~ label.nav-toggle .close {
   display: block;
   padding: 10px 0;
+  fill: var(--bright-color);
 }
 #nav-checkbox:checked ~ label.nav-toggle .menu {
   display: none;
