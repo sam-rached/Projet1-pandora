@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-style: oblique;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   background-image: linear-gradient(
     to right top,
     #2b14c6,
@@ -83,6 +83,7 @@ li.nav-item {
 #nav-checkbox:checked ~ label.nav-toggle .close {
   display: block;
   padding: 10px 0;
+  fill: var(--bright-color);
 }
 #nav-checkbox:checked ~ label.nav-toggle .menu {
   display: none;
@@ -94,6 +95,9 @@ a.nav-link {
   text-decoration: none;
   color: --lighter-color;
   letter-spacing: 0.1rem;
+  border-top: 2px dotted #1c6ea4;
+  border-bottom: 2px dotted #1c6ea4;
+  border-radius: 40px 0px 40px 0px;
 }
 
 a.nav-link:hover {
@@ -118,7 +122,6 @@ a.nav-link:hover {
   font-family: "Permanent Marker", cursive;
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.4);
 }
-
 
 h2.form-title {
   color: var(--lightercolor);
@@ -234,7 +237,6 @@ p.div-footer {
 }
 
 @media screen and (max-width: 800px) {
-
   svg {
     width: 1.6rem;
     fill: var(--lighter-color);
@@ -273,7 +275,7 @@ p.div-footer {
     background-color: var(--darker-color);
     /* min-height: 100vh; */
   }
-  
+
   div.div-footer {
     background-color: var(--darker-color);
     width: 100%;
