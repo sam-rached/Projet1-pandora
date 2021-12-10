@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-style: oblique;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   background-image: linear-gradient(
     to right top,
     #2b14c6,
@@ -117,9 +117,7 @@ a.nav-link:hover {
   color: var(--lighter-color);
   font-family: "Permanent Marker", cursive;
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.4);
- 
 }
-
 
 h2.form-title {
   color: var(--lightercolor);
@@ -201,7 +199,7 @@ textarea::placeholder {
 
 .faq {
   color: var(--lighter-color);
-  text-decoration: none;s
+  text-decoration: none;
 }
 
 .div-footer p {
@@ -234,7 +232,6 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 800px) {
-
   svg {
     width: 1.6rem;
     fill: var(--lighter-color);
@@ -272,7 +269,7 @@ textarea::placeholder {
     background-color: var(--darker-color);
     /* min-height: 100vh; */
   }
-  
+
   div.div-footer {
     background-color: var(--darker-color);
     width: 100%;
