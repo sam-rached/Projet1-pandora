@@ -252,7 +252,7 @@ img#zone4-map {
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   /* height: 100px; */
   width: auto;
@@ -263,18 +263,16 @@ footer {
 div.footer {
   width: 80%;
   display: inherit;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: cbaseline;
 }
 
 i {
-  width: 20px;
-  height: 20px;
-  background-color: var(--lighter-color);
+  width: 40px;
+  height: 40px;
+  background-color: var(--second-color);
   border-radius: 50%;
   color: var(--lighter-color);
-}
-i:hover {
-  color: var(--second-color);
 }
 
 .listenAnthem {
@@ -287,6 +285,9 @@ i:hover {
   height: 120px;
 }
 
+.faq {
+  
+}
 @media screen and (max-width: 800px) {
   body {
     margin: 0px;
@@ -393,10 +394,7 @@ i:hover {
     height: 15px;
     background-color: var(--lighter-color);
     border-radius: 50%;
-    color: var(--lighter-color);
-  }
-  i:hover {
-    color: var(--second-color);
+    color: var(--secondary-color);
   }
 
   audio {
