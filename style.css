@@ -378,12 +378,19 @@ i {
 
   .footer {
     padding: 18px 0;
+    margin-left: 5px;
     margin-top: 0;
     border: 0;
     color: var(--lighter-color);
+    font-size: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
+
+  .listenAnthem {
+    font-size: 10px;
+  }
+  
   div.footer {
     width: 50%;
     display: inherit;
@@ -397,7 +404,9 @@ i {
     border-radius: 50%;
     color: var(--secondary-color);
   }
-
+  .buttons {
+    display: none;
+  }
   audio {
     width: 200px;
     height: 40px;

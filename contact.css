@@ -185,7 +185,7 @@ textarea::placeholder {
 
 .footer {
   position: relative;
-  height: 50px;
+  height: 80px;
   width: auto;
   background-color: var(--second-color);
   color: var(--lighter-color);
@@ -199,14 +199,15 @@ textarea::placeholder {
   text-decoration: none;
 }
 
-.faq {
+.team {
   color: var(--lighter-color);
-  text-decoration: none;s
+  text-decoration: none;
 }
 
-.div-footer p {
-  padding: 0 5px;
+p.div-footer {
+  padding: 50px;
 }
+
 /********* responsive ******* */
 
 @media only screen and (min-width: 560px) {
