@@ -13,21 +13,21 @@ const habitants = {
 
 
 const food = {
-  zone1: `Tout ce qui vole... Vous ne pouvez pas vraiment manger une vache là-haut, n'est-ce pas! Si vous avez de la chance, un dragon peut jeter le reste de sa carcasse si cela arrive COUREZ pour ramasser la chair en décomposition restante ! délicieux.`,
+  zone1: `Tout ce qui vole... Vous ne pouvez pas vraiment manger une vache là-haut, n'est-ce pas ! Si vous avez de la chance, un dragon peut jeter le reste de sa carcasse. Si cela arrive COUREZ... pour ramasser la chair en décomposition restante ! Délicieux.`,
   zone2: `Imergez-vous dans la fête façon Na'vi grâce aux cocktails de champignons hallucinogènes proposés sur le site: leurs couleurs éclatantes sont un avant-goût du voyage qui vous attend.`,
   zone3: "Leur plat local est le Couscous royal au manioc et pattes de tarantule grillées, un délice divin.Sinon la chasse et la cueillette occupent la majeur partie de leur temps (manioc, banane, serpent)",
   zone4: `Choux, navets, betteraves... Que des légumes tristes, car rien d'autre ne pousse dans leur région. Leur pain est très mauvais, évitez le. Il est fortement conseillé d'apporter sa propre nourriture. Et sa propre boisson, car il est déjà arrivé qu'ils empoisonnent l'eau pour une querelle de voisinage... Photo de testicules de poulets, met très prisé par les locaux. Oui, çà a le gout de ce à quoi çà ressemble. C'est sûr que tout cela ne vaut pas le fameux couscous d'Amazonia.`,
 }
 
 const nature = {
-  zone1: `Vue d'en haut, rien de mieux. Il y a encore beaucoup de végétation sur les Islands comme : arbres, herbe, fleurs. Faites attention à ne pas tomber, rien ne dit mieux Floating Island qu'un énorme flanc de falaise et tombez a ca mort(avec vue et vole surprenante).`,
+  zone1: `Vue d'en haut, rien de mieux. Il y a encore beaucoup de végétation sur les Islands comme les arbres, l'herbe et les magnifiques fleurs. Faites attention à ne pas tomber, rien ne représente mieux Floating Island qu'un énorme flanc de falaise et tombez de là, mène directement à la mort (avec vue impressionnante et un vol surprenant pour finir).`,
   zone2: `L'Arbre des âmes est aussi un haut lieux de la vie nocturne sur Pandora où on se retrouve entre membres de la tribu afin de pratiquer des danses rituelles jusqu'au petit jour. Les plantes fluorescentes qui se trouvent autour permettent un éclairage psychédélique idéal pour vos soirées les plus folles et mémorables.`,
   zone3: "Paysages à couper le souffle, la nature verte est omniprésente dans ce coin reclus de Pandora. Mais elle cache très bien son jeu, quelques insectes et animaux seront heureux de vous rencontrer ",
   zone4: `Des forêts, des plaines et de la boue, beaucoup de boue. Ce qui explique surement leur surnom de "bouseux". Pour la faune, vous pourrez peut-être apercevoir quelques animaux sauvages comme les perdrix, les faisans, les cerfs et beaucoup plus rare les <a href="https://fr.wikipedia.org/wiki/Jackalope" target="_blank">Jackalope</a>. Illustration : des enfants de la vallée s'amusant. Oui, ils ont des plaisirs simples. Pas comme ces frimeurs de na'vi qui prennent des cocktails de champignons hallucinogènes.`,
 }
 
 const customs = {
-  zone1: `Voler sur le dos d'un dragon est l'une des principales coutumes des Floating Islands, c'est comme monter à cheval à 10000 mètres du sol a 300 km h avec un risque élevé d'avoir des insectes dans les yeux et potentiellement mourir, mais à part ça tout comme monter a cheval. La seule façon de volé sur un dragon est de se connecter avec un dragon. Good luck with that.`,
+  zone1: `Voler sur le dos d'un dragon est l'une des principales coutumes des Floating Islands, c'est comme monter à cheval à 10000 mètres du sol a 300 km h avec un risque élevé d'avoir des insectes dans les yeux et potentiellement mourir. La seule façon de voler sur un dragon est de se connecter avec lui. Good luck with that.`,
   zone2: `Veillez à vous habiller à la mode Na'vi pour sortir: pagne, colliers de perles et plumes de Nadrak (le paon local) de rigueur, les chaussures à semelles anti-dérapantes étant un must pour éviter toute chute malencontreuse sur le dance-floor.`,
   zone3: `La coutume est très simple et se résume à un proverbe : "Faites vivre votre passion, elle vous réchauffera quand le monde deviendra froid."`,
   zone4: `Vous découvrirez des coutumes amusantes et très intéressantes. Mais pas dans la vallée des Paiquores. Dans les autres parties de la planètes, oui. Si on vous propose de jouer au "Pan sur la goule", n'y jouez pas. Si on vous propose le jeu du "KISUCEKI", passez votre chemin également. Illustration : la descente vers le fond de la vallée en tyrolienne. Pas comme ces frimeurs de na'vi qui volent à dos de dragons.`,
