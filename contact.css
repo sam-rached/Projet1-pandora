@@ -266,6 +266,7 @@ p.div-footer {
     font-family: "Prompt", sans-serif;
     color: white;
     font-style: oblique;
+    font-size: 10px;
     width: 100%;
     margin: 0px;
     /* overflow: hidden; */
