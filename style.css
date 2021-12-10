@@ -97,15 +97,16 @@ a {
   text-decoration: none;
   color: var(--main-color);
 }
-a:visited {
-  color: var(--lighter-color);
-}
 
 li:hover,
 a:hover {
   background-color: var(--second-color);
   color: var(--lighter-color);
   cursor: pointer;
+}
+
+.faq {
+  color: var(--lighter-color);
 }
 
 /**************************************************************************
@@ -264,7 +265,7 @@ div.footer {
   width: 80%;
   display: inherit;
   justify-content: space-between;
-  align-items: cbaseline;
+  align-items: baseline;
 }
 
 i {
@@ -285,9 +286,7 @@ i {
   height: 120px;
 }
 
-.faq {
-  
-}
+
 @media screen and (max-width: 800px) {
   body {
     margin: 0px;
@@ -381,12 +380,12 @@ i {
     border: 0;
     color: var(--lighter-color);
     display: flex;
-    justify-content: space-center;
+    justify-content: space-between;
   }
   div.footer {
     width: 50%;
     display: inherit;
-    justify-content: space-center;
+    justify-content: space-between;
   }
 
   i {
