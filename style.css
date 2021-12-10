@@ -113,7 +113,7 @@ a:hover {
   width: 100%;
 }
  */
-img.marker {
+/* img.marker {
   height: 20px;
 }
 
@@ -139,7 +139,7 @@ img#zone4-map {
   position: relative;
   left: 620px;
   top: 240px;
-}
+}*/
 
 /**************************************************************************
 ** SECTION CAROUSEL
@@ -279,7 +279,7 @@ i:hover {
 .woodSprite {
   position: absolute; /* relative;*/
   top: -100px;
-  height: 60px;
+  height: 120px;
 }
 
 @media screen and (max-width: 800px) {
@@ -401,5 +401,8 @@ i:hover {
 
   .listenAnthem {
     width: 50%;
+  }
+  .woodSprite {
+    height: 60px;
   }
 }
