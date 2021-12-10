@@ -95,6 +95,9 @@ a.nav-link {
   text-decoration: none;
   color: --lighter-color;
   letter-spacing: 0.1rem;
+  border-top: 2px dotted #1c6ea4;
+  border-bottom: 2px dotted #1c6ea4;
+  border-radius: 40px 0px 40px 0px;
 }
 
 a.nav-link:hover {
