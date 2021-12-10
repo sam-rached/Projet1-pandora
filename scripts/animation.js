@@ -28,6 +28,7 @@ class woodSpriteAnimation {
 
     this.moveX = null, this.numberMoveX = 0;
     clearInterval(this.idAnimation);
+    // on va appeler la méthode nextframe toutes les X millisecondes (ici entre 10 et 50ms)
     this.idAnimation = setInterval(this.nextFrame, getRandomIntInclusive(10,50), this);
   }
   nextFrame(self) {
@@ -45,7 +46,7 @@ class woodSpriteAnimation {
       self.posY++;
       self.posX += self.moveX;
 
-      self.img.style.top = `${Math.floor(self.posY)}px`;
+      self.img.style.top = `${self.posY}px`;
       self.img.style.left = `${self.posX}px`;
     }
   }

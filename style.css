@@ -107,7 +107,7 @@ a:hover {
   width: 100%;
 }
  */
-img.marker {
+/* img.marker {
   height: 20px;
 }
 
@@ -133,7 +133,7 @@ img#zone4-map {
   position: relative;
   left: 620px;
   top: 240px;
-}
+}*/
 
 /**************************************************************************
 ** SECTION CAROUSEL
@@ -250,7 +250,7 @@ footer {
 .woodSprite {
   position: absolute; /* relative;*/
   top: -100px;
-  height: 60px;
+  height: 120px;
 }
 
 @media screen and (max-width: 800px) {
@@ -326,5 +326,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+  .woodSprite {
+    height: 60px;
   }
 }
