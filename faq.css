@@ -92,11 +92,11 @@
     text-overflow: ellipsis;
     font-size: 12px;
   }
+
   a {
     text-decoration: none;
     color: var(--main-color);
   }
-
   
   li:hover,
   a:hover {
@@ -120,14 +120,15 @@
     width: 80%;
     height: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
+    color: var(--lighter-color);
   }
 
-  .buttons {
-    color: var(--lighter-color);
-    max-width: 80px;
-    max-height: 80px;
+  a.faq {
+    color: white;
+    width: 80px;
+    height: 80px;
   }
 
   i {
