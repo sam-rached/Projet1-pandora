@@ -93,7 +93,6 @@ li.nav-item {
 a.nav-link {
   padding: 10px;
   text-decoration: none;
-  color: --lighter-color;
   letter-spacing: 0.1rem;
   border-top: 2px dotted #1c6ea4;
   border-bottom: 2px dotted #1c6ea4;
@@ -101,7 +100,6 @@ a.nav-link {
 }
 
 a.nav-link:hover {
-  color: --lighter-color;
   background-color: var(--second-color);
   color: var(--lighter-color);
   cursor: pointer;
@@ -155,8 +153,8 @@ button {
   border-radius: 5px;
   border: 1px solid;
   border-color: whitesmoke;
-  box-shadow: var(--main-color);
 }
+
 input,
 textarea,
 button {
