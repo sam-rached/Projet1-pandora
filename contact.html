@@ -32,12 +32,12 @@
         class="nav-checkbox"
       />
       <label for="nav-checkbox" class="nav-toggle">
-        <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+        <svg class="menu" viewBox="0 0 448 512" width="100">
           <path
             d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
           />
         </svg>
-        <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+        <svg class="close" viewBox="0 0 384 512" width="100">
           <path
             d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
           />
@@ -55,7 +55,7 @@
       <div class="title">
         <h2 class="form-title">Préparez votre séjour</h2>
       </div>
-      <form action="" class="form-menu">
+      <form class="form-menu">
         <div class="form">
           <label for="name">Nom</label>
           <input type="text" id="name" placeholder="laissez votre nom" />
@@ -66,7 +66,7 @@
         </div>
         <div class="form">
           <label for="trip">Choix de la destination</label>
-          <select name="trip" id="trip" required>
+          <select name="trip" id="trip">
             <option value="45">Amazonia</option>
             <option value="55">Pandora by Night</option>
             <option value="48">Vallée des Paiquores</option>
@@ -75,7 +75,7 @@
         </div>
         <div class="form">
           <label for="passenger">Nombre de personne</label>
-          <select name="passenger" id="passenger" required>
+          <select name="passenger" id="passenger">
             <option value="1">Une personne</option>
             <option value="2">Deux personnes</option>
             <option value="3">Trois personnes</option>
@@ -83,23 +83,27 @@
           </select>
         </div>
       </form>
-      <form action="" class="form-menu">
+      <form class="form-menu">
         <div class="form">
           <div><span id="nightPrice"></span> € / nuit</div>
-          <label for="">Date de début</label>
+          <label for="start_date">Date de début</label>
           <input id="start_date" type="date" required /><br />
         </div>
         <div class="form">
-          <label for="">Date de fin</label>
+          <label for="end_date">Date de fin</label>
           <input id="end_date" type="date" required /><br />
-          <button class="">Validez</button>
+          <button>Validez</button>
           <h2>Total : <span id="total"></span> €</h2>
         </div>
       </form>
     </main>
     <footer class="footer">
       <div class="div-footer">
-        <p><a class="team" href="team.html">Copyright 2021 Tous droits réservés Team Rocket</a></p>
+        <p>
+          <a class="team" href="team.html"
+            >Copyright 2021 Tous droits réservés Team Rocket</a
+          >
+        </p>
         <a class="team" href="team.html">Visitez la Team Rocket</a>
       </div>
     </footer>
