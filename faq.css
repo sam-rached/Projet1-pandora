@@ -132,16 +132,16 @@ div.advices {
   overflow: hidden;
 }
 .iysha {
-  background: url("/img/Iysha.jpg") center;
+  background: url("img/Iysha.jpg") center;
 }
 .juliette {
-  background: url("/img/juliette1.png") center;
+  background: url("img/juliette1.png") center;
 }
 .samir {
-  background: url("/img/sam.png") center;
+  background: url("img/sam.png") center;
 }
 .sylvain {
-  background: url("/img/sylvain.png") center;
+  background: url("img/sylvain.png") center;
 }
 .pile {
   position: absolute;
