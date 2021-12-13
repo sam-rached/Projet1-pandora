@@ -272,39 +272,6 @@ i {
     color: var(--main-color);
   }
 
-  .carousel {
-    position: relative;
-    width: 85vw;
-    height: auto;
-    border-radius: 10px;
-    margin: 20px auto;
-    overflow: hidden;
-    box-shadow: 8px 8px 4px -3px rgba(0, 0, 0, 0.4);
-  }
-
-  @keyframes carousel {
-    0%,
-    20% {
-      transform: translateX(0);
-    }
-    25%,
-    45% {
-      transform: translateX(-85vw);
-    }
-    50%,
-    70% {
-      transform: translateX(-170vw);
-    }
-    75%,
-    95% {
-      transform: translateX(-255vw);
-    }
-
-    100% {
-      transform: translateX(-340vw);
-    }
-  }
-
   #name-area {
     font-size: 30px;
     color: var(--lighter-color);
